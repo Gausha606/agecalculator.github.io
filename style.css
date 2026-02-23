@@ -11,6 +11,86 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainContainer h1 {
+  font-size: 2.5rem;
+}
+
+.mainContainer span {
+  color: rgb(255, 255, 78);
+}
+
+.dateDiv {
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  background-color: #fdd8f2;
+  border-radius: 8px;
+  gap: 20px;
+  box-shadow: 0 2px 4px #0a0a0a;
+}
+
+.dateDiv input {
+  position: relative;
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+.dateDiv .dateIcon {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
+.dateDiv input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 140px;
+  width: 30px;
+  height: 100%;
+  background-position: calc(100% - 10px);
+  background-size: 20px;
+  cursor: pointer;
+}
+
+.dateDiv button {
+  cursor: pointer;
+  padding: 8px;
+  background-color: rgb(255, 255, 78);
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px #0a0a0a;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.resultPara {
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background-color: #fdd8f2;
+  border-radius: 10px;
+  color: black;
+  margin-top: 20px;
 }
