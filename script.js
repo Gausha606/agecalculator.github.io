@@ -21,7 +21,7 @@ submitBtn.addEventListener("click", (e) => {
 
   //method 2:
   let endTime = luxon.DateTime.now().startOf("day");
-
+  if(startTime > endTime) return alert("Date of birth can not be bigger than current date.")
   let diff = endTime.diff(startTime, ["years", "months", "days"]).toObject();
 
   const { years, months, days } = diff;
